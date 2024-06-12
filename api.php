@@ -2,7 +2,8 @@
 require 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['key']) && $_POST['key'] == 'kOEjOeaoL7BmgxC6PCM5GZ75KVsq698hzgHv81Kd6XxfTsOM2W') {
+    require 'key.php';
+    if (isset($_POST['key']) && $_POST['key'] == $apiKey) {
         $gender = $_POST['gender'];
         $watched_at = isset($_POST['watched_at']) && !empty($_POST['watched_at']) ? $_POST['watched_at'] : date('Y-m-d H:i:s');
         if (in_array($gender, ['male', 'female', 'family'])) {

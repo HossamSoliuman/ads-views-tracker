@@ -1,0 +1,10 @@
+[
+  {
+    "type": "sqlite",
+    "path": "c:\\xampp\\htdocs\\ads-track\\ad_watch.db"
+  },
+  {
+    "type": "sqlite",
+    "path": "c:\\xampp\\htdocs\\people-count\\database.db"
+  }
+]
